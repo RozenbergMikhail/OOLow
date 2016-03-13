@@ -76,12 +76,12 @@ namespace OOLowTest
 
         private Derived GetInitializedDerivedObject()
         {
-            return new Derived(new DerivedMethods(new BaseMethods()), "Base", "Derived");
+            return new Derived("Base", "Derived");
         }
 
         private Base GetInitializedBaseObject()
         {
-            return new Base(new BaseMethods(), "Base");
+            return new Base("Base");
         }
     }
 }

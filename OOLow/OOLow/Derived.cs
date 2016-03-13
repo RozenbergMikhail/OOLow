@@ -1,11 +1,10 @@
-﻿using System;
-
-namespace OOLow
+﻿namespace OOLow
 {
     public class Derived : Base
     {
-        public Derived(IDerivedVirtualMethods virtualMethods, string baseData, string derivedData) : base(virtualMethods, baseData)
+        public Derived(string baseData, string derivedData) : base(baseData)
         {
+            base.CallVirt = DerivedMethods.Instance;
             this.DerivedData = derivedData;
         }
 
@@ -21,6 +20,9 @@ namespace OOLow
 
     public class DerivedMethods : IDerivedVirtualMethods
     {
+        private static DerivedMethods instance = new DerivedMethods(BaseMethods.Instance);
+        public static DerivedMethods Instance { get { return instance; } }
+
         private readonly IBaseVirtualMethods baseVirtualMethods;
 
         public DerivedMethods(IBaseVirtualMethods baseVirtualMethods)

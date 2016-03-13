@@ -4,13 +4,13 @@ namespace OOLow
 {
     public class Base
     {
-        public Base(IBaseVirtualMethods virtualMethods, string baseData)
+        public Base(string baseData)
         {
-            this.CallVirt = virtualMethods;
+            this.CallVirt = BaseMethods.Instance;
             this.BaseData = baseData;
         }
 
-        public IBaseVirtualMethods CallVirt { get; private set; }
+        public IBaseVirtualMethods CallVirt { get; protected set; }
 
         public string BaseData { get; private set; }
     }
@@ -24,6 +24,9 @@ namespace OOLow
 
     public class BaseMethods : IBaseVirtualMethods
     {
+        private static BaseMethods instance = new BaseMethods();
+        public static BaseMethods Instance { get { return instance; } }
+
         public static string SimpleMethod(Base obj)
         {
             return "SimpleMethod result";
