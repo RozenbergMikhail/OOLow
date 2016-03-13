@@ -10,7 +10,7 @@ namespace OOLow
             this.BaseData = baseData;
         }
 
-        public IBaseVirtualMethods CallVirt { get; protected set; }
+        public IBaseVirtualMethods CallVirt { get; private set; }
 
         public string BaseData { get; private set; }
     }
