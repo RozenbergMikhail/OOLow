@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OO", "OO\OO.csproj", "{6CD6F7AF-8C7A-46EE-BB17-359A9AD983A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOLowTest", "OOLowTest\OOLowTest.csproj", "{77C22292-F80E-4ADE-A73E-12BF21DB44F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOLow", "OOLow\OOLow.csproj", "{100D96BA-2947-4EE7-A16D-CB321E27E809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6CD6F7AF-8C7A-46EE-BB17-359A9AD983A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD6F7AF-8C7A-46EE-BB17-359A9AD983A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD6F7AF-8C7A-46EE-BB17-359A9AD983A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C22292-F80E-4ADE-A73E-12BF21DB44F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C22292-F80E-4ADE-A73E-12BF21DB44F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C22292-F80E-4ADE-A73E-12BF21DB44F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C22292-F80E-4ADE-A73E-12BF21DB44F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100D96BA-2947-4EE7-A16D-CB321E27E809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100D96BA-2947-4EE7-A16D-CB321E27E809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100D96BA-2947-4EE7-A16D-CB321E27E809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100D96BA-2947-4EE7-A16D-CB321E27E809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
